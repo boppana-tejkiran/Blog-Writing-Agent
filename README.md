@@ -1,3 +1,3 @@
 # Blog-Writing-Agent
-An LLM based Agetic system that can automatically generate
+An LLM based Agentic system that can automatically generate
 technical blogs on a given topic.
