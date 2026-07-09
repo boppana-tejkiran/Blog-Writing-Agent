@@ -13,6 +13,7 @@ from langgraph.graph import StateGraph, START, END
 from langgraph.types import Send
 
 from langchain_openai import ChatOpenAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.messages import SystemMessage, HumanMessage
 from dotenv import load_dotenv
 
@@ -105,7 +106,8 @@ class State(TypedDict):
 # 2) LLM
 # --------
 
-llm = ChatOpenAI(model="gpt-4.1-mini")
+# llm = ChatOpenAI(model="gpt-4.1-mini")
+llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
 
 # --------
 # 3) Router
